@@ -27,12 +27,10 @@ void levelChange(void * data)
     if (mraa_gpio_read(dusty->sensor)==0)
     {
 	dusty->sumLow += diff;
-	mraa_gpio_write(dusty->led, 0);
     }
     else
     {
 	dusty->sumHigh += diff;
-	mraa_gpio_write(dusty->led, 1);
     }
     dusty->lastSwitch = now;
 }
