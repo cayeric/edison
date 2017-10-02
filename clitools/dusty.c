@@ -47,7 +47,7 @@ void resetDusty(Dusty * dusty)
 
 int main(int argc, char * argv[])
 {
-    if (argc!=1)
+    if (argc!=2)
     {
 	 printf("Reading dust sensor Shinyei PPD42NS on given GPIO and print percent value for 30 sec interval\n");
 	 printf("USAGE: dusty GPIO_PIN_NUMBER\n");
